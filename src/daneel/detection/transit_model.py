@@ -1,6 +1,10 @@
-import numpy as np
-import batman
+import importlib
+
 import matplotlib.pyplot as plt
+import numpy as np
+import setuptools  # noqa: F401  # Provides distutils compatibility for batman.
+
+batman = importlib.import_module("batman")
 
 
 class TransitModel:

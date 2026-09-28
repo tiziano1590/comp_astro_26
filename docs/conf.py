@@ -5,6 +5,7 @@
 
 import os
 import sys
+
 sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
@@ -35,8 +36,9 @@ language = 'en'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
+html_theme = 'alabaster'
+html_static_path = []
+autodoc_mock_imports = ['batman']
 
 # GitHub Pages configuration
 html_baseurl = 'https://tiziano1590.github.io/comp_astro_26/'
@@ -44,19 +46,7 @@ html_title = f"{project} {release} documentation"
 html_short_title = f"{project} {release}"
 
 # Theme options
-html_theme_options = {
-    'canonical_url': 'https://tiziano1590.github.io/comp_astro_26/',
-    'analytics_id': '',  # Add your Google Analytics ID if you have one
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': False,
-    'collapse_navigation': True,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False
-}
+html_theme_options = {}
 
 # -- Autodoc configuration --------------------------------------------------
 autodoc_default_options = {

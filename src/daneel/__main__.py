@@ -1,8 +1,8 @@
 import argparse
 from datetime import datetime, timezone
 
-from daneel.parameters import Parameters
 from daneel.detection import TransitModel
+from daneel.parameters import Parameters
 
 
 def main():

@@ -6,10 +6,10 @@ detection datasets where positive samples (planets) are typically much rarer
 than negative samples (non-planets).
 """
 
-import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler
+import pandas as pd
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 
 # Random state for reproducibility
 RANDOM_STATE = 42
